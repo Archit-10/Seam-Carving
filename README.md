@@ -14,22 +14,29 @@ Seam carving is a content-aware image resizing technique that removes low-import
     Multiple Energy Functions: Supports different methods for calculating energy, such as gradient magnitude and color histograms.
 
 <h2><strong>Demonstration</strong></h2>
+<p>Before and after images showcasing the seam carving effect.</p>
 
-Before and after images showcasing the seam carving effect.
+<p>The input image is on the left and the result is on the right.</p>
 
-The input image is on the left and the result of the algorithm is on the right.
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/a5fd7851-9a96-49bb-a0a9-60b8972aff66" width="500"/>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/c4277ee1-de84-40f8-8e04-36216566b1d8" width="200"/>
+    </td>
+  </tr>
 
-<img src="https://github.com/user-attachments/assets/a5fd7851-9a96-49bb-a0a9-60b8972aff66" alt="Description of image" height="400"/>
-
-<img src="https://github.com/user-attachments/assets/c4277ee1-de84-40f8-8e04-36216566b1d8" alt="Resized Image" height="300"/>
-
-<img src="https://github.com/user-attachments/assets/1420848c-34c3-48de-a5de-2cad5600bb8d" alt="Image 1" width="400"/>
-
-<img src="https://github.com/user-attachments/assets/becca250-4f0c-4b67-be7d-e3f1f1896741" alt="Image 2" width="300"/>
-
-
-
----
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/1420848c-34c3-48de-a5de-2cad5600bb8d" width="500"/>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/becca250-4f0c-4b67-be7d-e3f1f1896741" width="200"/>
+    </td>
+  </tr>
+</table>
 
 ## Build Instructions
 
