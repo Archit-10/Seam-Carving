@@ -1,17 +1,17 @@
 # Seam-Carving
 
-Introduction
+## Introduction
 
-Seam carving is a content-aware image resizing technique that removes low-importance pixel paths to reduce image size but preserving important visual details.
+Seam carving is a smart image resizing technique that changes the size of an image without simply stretching or cropping it. Instead, it removes the least important pixels while keeping important objects and edges intact.
 
 <h2><strong>Features</strong></h2>
 
-    Energy Calculation: Computes the energy of each pixel in the image, enabling effective seam identification.
-    Seam Identification: Identifies the seam (path of pixels) with the lowest energy to minimize distortion.
-    Seam Removal: Removes the identified seam from the image to achieve the desired dimensions.
-    Resizing: Continuously removes seams until the image reaches the specified size.
-    User Input: Allows users to specify the desired width or height for resizing.
-    Multiple Energy Functions: Supports different methods for calculating energy, such as gradient magnitude and color histograms.
+- Energy Calculation: Computes the energy of each pixel in the image, enabling effective seam identification.
+- Seam Identification: Identifies the seam (path of pixels) with the lowest energy to minimize distortion.
+- Seam Removal: Removes the identified seam from the image to achieve the desired dimensions.
+- Resizing: Continuously removes seams until the image reaches the specified size.
+- User Input: Allows users to specify the desired width or height for resizing.
+- Multiple Energy Functions: Supports different methods for calculating energy, such as gradient magnitude and color histograms.
 
 <h2><strong>Demonstration</strong></h2>
 <p>Before and after images showcasing the seam carving effect.</p>
@@ -60,35 +60,39 @@ make
 
 ## Run the Program
 
+Run the executable:
+
 ```bash
 ./seam_carver
+```
 
-You will be prompted to enter target dimensions:
+When prompted, enter the target image dimensions in the following format:
 
+```text
 width height
+```
 
-Example input:
+**Example:**
 
+```text
 400 300
+```
 
-Output is saved to:
+The resized image will be saved to:
 
+```text
 assets/output/resized.png
 ```
 
 <h2><strong>Performance Metrics</strong></h2>
 
-    Time Complexity: O(NM) for finding the optimal seam, where N is the height and M is the width of the image.
-    Memory Usage: Memory usage is proportional to the size of the image, as additional space is required for energy and cost matrices.
+- Time Complexity: O(NM) for finding the optimal seam, where N is the height and M is the width of the image.
+- Memory Usage: Memory usage is proportional to the size of the image, as additional space is required for energy and cost matrices.
 
-## Challenges Faced
+## Challenges & Solutions
 
-Handling complex textures and preserving important edges during seam detection.
-
-
-## Improvement
-
-Used gradient-based energy to better preserve key visual structures like edges and objects.
+- **Challenge:** Preserving important edges and objects during seam removal in complex images.
+- **Solution:** Used a gradient-based energy function to prioritize significant visual regions and minimize distortion.
 
 ## QA 
 
@@ -98,16 +102,18 @@ Used gradient-based energy to better preserve key visual structures like edges a
 
 ## Tech Stack
 
-    Programming Language: C++
-    Libraries: OpenCV
+- Programming Language: C++
+- Libraries: OpenCV
 
 <h2><strong>Contributions</strong></h2>
 
 Contributions are welcome! If you would like to contribute to this project, please follow these guidelines:
 
-    Fork the repository.
-    Create a new branch for your feature or bug fix.
-    Submit a PR detailing your changes.    
+- Fork the repository.
+
+- Create a new branch for your feature or bug fix.
+
+- Submit a PR detailing your changes.    
 
 
 
